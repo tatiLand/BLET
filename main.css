@@ -1,0 +1,155 @@
+/*.body, .container.main-container {
+    color: lightgray;
+    //background-color: #112951;
+
+}
+*/
+
+.navbar {
+    margin: auto;
+    max-width: 860px;    
+    display: block;
+    color: white;
+    background-color: #082759;
+    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-style: ridge;
+    border-color: midnightblue;
+    padding: 10px, 10px;
+}
+
+
+ul.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    float: none;
+    margin: auto;
+    background-color: #082759;
+}
+
+.logoHeader {
+   margin: auto;
+   margin-top: 70px;
+}
+
+.logoHeader img {
+    height: auto;
+    width: 90%;
+}
+
+.dropdown-menu {
+    //background-color: #32353a;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.varContainer {
+   //margin-top: 230px;
+}
+
+.container.sign-in-container {
+    margin-top: 8%;
+}
+
+
+.card.sign-in-card {
+    padding: 40px 0px 20px;
+    background-color: #fcfdff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);    
+}
+
+img.d-block {
+    max-height: 250px;
+    margin: auto;
+}
+
+img.sign-in-image {
+    padding: 0 2rem 2rem;
+    margin: auto;
+    display: block;
+}
+
+form.sign-in-form {
+    max-width: 350px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+button.sign-in-btn {
+    color: #ffffff;
+    background-color: blue;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+button.register-btn {
+    color: #ffffff;
+    background-color: darkred;
+    width: 100%;
+    margin-bottom: 1.2rem;  
+}
+
+.blet339-calendar {
+    margin: auto;
+}
+
+h5 {
+    font-family: 'Charmonman', cursive;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Cardo', serif;
+}
+
+h1 {
+    margin: 40px 40px;
+    margin-bottom: 0;
+}
+
+.carouselContainer {
+    align-content: center;
+    margin: auto;
+}
+
+#carouselBlet.img {
+    margin: auto;
+    max-height: 250px;
+}
+
+##### responsive #####
+ @media (max-width: 550px) {
+     .big-container {
+         display: none;
+     }
+ }
+ @media (min-width: 550px) {
+     .small-container {
+         display: none;
+     }
+ }
+ /* Responsive iFrame */
+ .responsive-iframe-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,   
+ .vresponsive-iframe-container object,  
+ .vresponsive-iframe-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
