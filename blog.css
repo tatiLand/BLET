@@ -21,11 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 .display-4 {
   font-size: 2.5rem;
 }
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 3rem;
-  }
-}
+
 
 .nav-scroller {
   position: relative;
@@ -80,12 +76,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
   color: #999;
 }
+/*
 
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
-  }
-}
 
 /* Pagination */
 .blog-pagination {
@@ -134,12 +126,127 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-.carouselContainer {
-    align-content: center;
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    //margin-top: 1rem;
+    margin-bottom: 1rem;
+  
+}
+
+.carousel-inner {
+    max-width: 100%;
+
+}
+
+/* Since positioning the image, we need to help out the caption */
+.centerRow {
+    background-color: #343a40;
+}
+
+.carousel-caption {
+  bottom: 2rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #343a40;
+
+  max-width: 600px;
+  margin: auto;
+}
+
+.carousel-item > img {
+  position: absolute;
+ 
+  top: 30px;
+
+  margin: auto;
+  max-height: 250px;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 348px) {
+  .blog-post-title {
+    font-size: 1.5rem;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;      
+  }
+
+  .carousel-caption {
+        font-size: 0.8rem;
+  }
+}
+
+/* FORMATTING  the contact form */
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed { line-height: 1.25; }
+
+#message {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.my-5 {
+   background-color: #f9f9f9;  
+}
+
+/*####FORMAT THE SIGN-IN PAGE######*/
+
+
+.card.sign-in-card {
+    padding: 40px 0px 20px;
+    background-color: #fcfdff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);    
+}
+
+img.d-block {
+    max-height: 250px;
     margin: auto;
 }
 
-#carouselBlet.img {
+img.sign-in-image {
+    padding: 0 2rem 2rem;
     margin: auto;
-    max-height: 250px;
+    display: block;
+}
+
+form.sign-in-form {
+    max-width: 350px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+button.sign-in-btn {
+    color: #ffffff;
+    background-color: blue;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+button.register-btn {
+    color: #ffffff;
+    background-color: darkred;
+    width: 100%;
+    margin-bottom: 1.2rem;  
 }
